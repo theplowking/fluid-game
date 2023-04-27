@@ -11,28 +11,34 @@
       }
 
       /* Scale canvas with resize attribute to full size */
-      canvas[resize] {
+      /* canvas[resize] {
           width: 100%;
           height: 100%;
-      }
+      } */
     </style>
-    <title>P5.js Sketch</title>
+    <title>AB Fluid</title>
   </head>
-  <!-- <body>
+  <body>
     <script src="p5.js"></script>
-    <script src="p5.svg.js"></script>
-    <script src="sketch_ocean.js"></script>
-  </body> -->
+    <!-- <script src="q5.min.js"></script> -->
+    <script src="fluid_ab.js"></script>
+    <script src="vehicles.js"></script>
+    <script src="sketch_fluid_ab.js"></script>
+  </body>
 
   <body>
     <!-- <script src="https://cdn.jsdelivr.net/npm/p5@1.0.0/lib/p5.js"></script> -->
 
-    <script type="text/javascript" src="https://unpkg.com/acorn"></script>
+    <!-- <script type="text/javascript" src="https://unpkg.com/acorn"></script>
     <script src="paper-full.js"></script>
     <script type="text/paperscript" src="paper.js" canvas="myCanvas"></script>
-    <script src="paper_sketch.js"></script>
-    <canvas id="myCanvas" resize></canvas>
-    <button id="download-to-svg">DOWNLOAD</button>
+    <script src="paper_sketch.js"></script> -->
+    <!-- <canvas id="myCanvas" resize></canvas>
+    <button id="download-to-svg">DOWNLOAD</button> -->
+    <button style="position: fixed;left: 850px;" onCLick="window.location.href='/index.html?level=1';">Level 1</button>
+    <button style="position: fixed;left: 920px;" onCLick="window.location.href='/index.html?level=2';">Level 2</button>
+    <button style="position: fixed;left: 990px;" onCLick="window.location.href='/index.html?level=3';">Level 3</button>
+    <button style="position: fixed;left: 1060px;" onCLick="location.reload();">Restart</button>
   </body>
 </html>
 

@@ -39,10 +39,10 @@ var scene =
 	};
 
 function preload() {
-    levels[1] = loadImage('assets/level1.png');
-    levels[2] = loadImage('assets/level2.png');
-    levels[3] = loadImage('assets/level3.png');
-    fish = loadImage('assets/fish_slow.gif');
+    levels[1] = loadImage('src/assets/level1.png');
+    levels[2] = loadImage('src/assets/level2.png');
+    levels[3] = loadImage('src/assets/level3.png');
+    fish = loadImage('src/assets/fish_slow.gif');
 }
 
 function setup() {

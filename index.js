@@ -3,7 +3,7 @@ var server = express();
 
 const port = 3000;
 
-server.use('/', express.static(__dirname + '/src'));
+server.use('/', express.static(__dirname + '/'));
 
 
 server.listen(port, () => {

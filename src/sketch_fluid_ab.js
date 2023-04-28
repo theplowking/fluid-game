@@ -14,6 +14,8 @@ let modeErase = false;
 
 let vehicles = [];
 
+let levelChoice = 1;
+
 let timer, buildCount, destoryCount;
 
 var scene = 
@@ -84,7 +86,7 @@ function setup() {
 
     //get level
     const urlParams = new URLSearchParams(window.location.search);
-    let levelChoice = 1;
+    
     if(urlParams.has('level')){
         levelChoice = urlParams.get('level');
      }
@@ -432,7 +434,7 @@ function getScore(){
 function winGame() {
     let time = millis() - timer;
     let score = getScore();
-    alert("Level complete! Time taken " +  (time /  1000).toFixed(1) + "s build count " + buildCount + " erase count " + destoryCount
+    alert("Level " + levelChoice + " complete! Time taken " +  (time /  1000).toFixed(1) + "s build count " + buildCount + " erase count " + destoryCount
             + "\nTotal Score " + score.toFixed(1));
     //console.log('is it asnyc');
     noLoop();
